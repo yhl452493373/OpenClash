@@ -19,6 +19,7 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v4
         with:
+          repository: https://github.com/vernesong/OpenClash.git
           ref: ${{ github.ref_name }}
 
       - name: New Version
@@ -30,6 +31,7 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v4
         with:
+          repository: https://github.com/vernesong/OpenClash.git
           ref: package
 
       - name: Current Version
@@ -46,6 +48,7 @@ jobs:
       - name: Clone OpenClash dev Repository
         uses: actions/checkout@v4
         with:
+          repository: https://github.com/vernesong/OpenClash.git
           ref: ${{ github.ref_name }}
 
       - name: Apt Update
