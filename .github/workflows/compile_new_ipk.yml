@@ -43,7 +43,7 @@ jobs:
   Compile:
     runs-on: ubuntu-latest
     needs: Get-Version
-    if: ${{ needs.Get-Version.outputs.version != needs.Get-Version.outputs.current_version }}
+    #if: ${{ needs.Get-Version.outputs.version != needs.Get-Version.outputs.current_version }}
     steps:
       - name: Clone OpenClash dev Repository
         uses: actions/checkout@v4
